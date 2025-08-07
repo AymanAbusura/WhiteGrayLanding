@@ -357,4 +357,37 @@ footer .menu__link:hover { color: #00dc9b; }
         opacity: 0; 
         width: 0; 
     }
+
+    .email_box div {
+        justify-content: center;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .push_text_1, .push_text_2 {
+        margin-left: 0;
+        display: inline-block;
+    }
+
+    .btn-register {
+        margin: 10px auto;
+    }
+
+    .home__title {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .button-container {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
 }
