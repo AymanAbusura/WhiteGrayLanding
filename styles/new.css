@@ -334,7 +334,6 @@
 /* NEXT SECTION */
 .how-to-begin {
     background: #fff;
-    padding-block: 0 50px;
 }
 
 .begin-container {
@@ -613,6 +612,10 @@ footer .menu__link:hover { color: #00dc9b; }
     justify-content: space-around;
 }
 
+.how-to-begin__about {
+    padding-block: 0 50px;
+}
+
 .left-card {
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -798,6 +801,31 @@ footer .menu__link:hover { color: #00dc9b; }
 
     .footer p {
         font-size: 12px;
+    }
+
+    .faq .section__info {
+        text-align: center;
+    }
+
+    .faq .title-2 {
+        text-align: center;
+    }
+
+    .left-card {
+        bottom: 0;
+    }
+
+    .container__about {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .how-to-begin__about {
+        padding-block: 50px;
+    }
+
+    .right-content, .left-card {
+        max-width: 100%;
     }
 }
 
