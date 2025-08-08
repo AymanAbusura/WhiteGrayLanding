@@ -1,6 +1,6 @@
 window.onload = function() {;
     // More Efficient than the upper
-    function setupToggle(toggleId) {
+    function setupToggle(toggleId, maxHeight) {
         var toggleLink = document.getElementById(toggleId);
         if (!toggleLink) return;
 
@@ -22,13 +22,13 @@ window.onload = function() {;
             }
         });
 
-        submenu.style.maxHeight = "270px";
+        submenu.style.maxHeight = maxHeight;
         submenu.style.overflowY = "auto";
     }
 
-    setupToggle('toggle');
-    setupToggle('mobile-toggle');
-    setupToggle('toggle-1');
+    setupToggle('toggle', '300px');
+    setupToggle('mobile-toggle', '300px');
+    setupToggle('toggle-1', '200px');
 
     // Scroll
     var buttons = document.querySelectorAll(".scroll_btn");
