@@ -22,7 +22,7 @@ window.onload = function() {;
             }
         });
 
-        submenu.style.maxHeight = "290px";
+        submenu.style.maxHeight = "270px";
         submenu.style.overflowY = "auto";
     }
 

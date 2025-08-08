@@ -131,7 +131,7 @@ section.p0{
 	line-height:1.5
 }
 .accent{
-	color:#fd8704
+	color: #00dc9b;
 }
 .accent-1{
 	color:#01c9ee
@@ -429,10 +429,11 @@ textarea{
 	transition:all .3s ease-in-out
 }
 .btn-cta{
-	max-width:-webkit-max-content;
-	max-width:-moz-max-content;
-	max-width:max-content;
-	margin:30px auto 0
+	/*max-width:-webkit-max-content;*/
+	/*max-width:-moz-max-content;*/
+	/*max-width:max-content;*/
+	margin:10px auto 0;
+	background: #fff;
 }
 .btn-o{
 	display:-webkit-box;
@@ -630,9 +631,6 @@ textarea{
 	margin:20px 0 0;
 	max-width:320px
 }
-.faq{
-	background:#f7f8f8
-}
 .faq__row{
 	display:-webkit-box;
 	display:-ms-flexbox;
@@ -642,20 +640,23 @@ textarea{
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	gap:30px
+	gap:30px;
+	align-items: center;
+	margin-top: 50px;
 }
 .faq__column p{
 	color:#1a1a1a;
 	font-size:18px;
 	font-weight:500;
-	line-height:1.7
+	line-height:1.7;
+	text-align: center;
 }
 .faq__column .btn{
-	margin-left:0
+	/*margin-left:0*/
 }
 .faq__spoiler{
-	width:100%;
-	max-width:910px
+	/*width:100%;*/
+	/*max-width:910px*/
 }
 .spoiler{
 	display:grid
@@ -668,15 +669,14 @@ textarea{
 	margin-bottom:10px;
 	padding:17px 50px 15px 30px;
 	width:100%;
-	font-weight:700;
 	font-size:16px;
 	line-height:1.4;
 	text-align:left;
-	border-radius:10px;
+	border-radius: 0px;
 	background:#fff;
 	color:#1a1a1a
 }
-.spoiler__title::before{
+/*.spoiler__title::before{
 	content:"";
 	position:absolute;
 	right:15px;
@@ -689,7 +689,7 @@ textarea{
 	background-repeat:no-repeat;
 	-webkit-transition:all .3s ease-in;
 	transition:all .3s ease-in
-}
+}*/
 .spoiler__title._active::before{
 	background-image:url("")
 }
@@ -772,7 +772,7 @@ textarea{
 	-ms-flex-align:start;
 	align-items:flex-start;
 	gap:30px;
-	padding-block:20px 30px
+	padding-block: 50px 50px;
 }
 .benefit__col{
 	-webkit-box-align:center;
@@ -785,8 +785,7 @@ textarea{
 	gap:10px
 }
 .benefit__col p{
-	color:#191d26;
-	font-weight:600;
+	color: #fff;
 	line-height:1.5
 }
 .footer{
@@ -1191,10 +1190,10 @@ table p+p{
 }
 	.faq__column{
 		margin:0;
-		max-width:350px
+		/*max-width:350px*/
 }
 	.faq__spoiler{
-		width:calc(100% - 380px)
+		/*width:calc(100% - 380px)*/
 }
 	.icon-big{
 		width:60px;
@@ -1275,9 +1274,17 @@ table p+p{
 }
 }
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
-	.bg{
+	.bg {
 		background-image:url("../assets/bg.jpg")
-}
+	}
+
+	.bg__2 {
+    	background-image: url("../assets/bg2.jpg");
+	}
+
+	.bg__3 {
+    	background-image: url("../assets/bg3.jpg");
+	}
 }
 @media (any-hover:hover){
 	/*.menu__link:hover{
